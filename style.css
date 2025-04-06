@@ -164,6 +164,41 @@ header .navbar ul li a:hover{
     border-radius: 1.5rem;
 
 }
+.githubmain {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .githubmain img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .githubleft,
+  .githubright {
+    width: 45%;
+  }
+  
+  /* For screens smaller than 768px: remove flex layout */
+  @media (max-width: 768px) {
+    .githubmain {
+      display: block; /* Removes flex */
+    }
+  
+    .githubleft,
+    .githubright {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
 
 .btn i{
     padding: 0 0.5rem;
